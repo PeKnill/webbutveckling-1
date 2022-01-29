@@ -1,0 +1,65 @@
+/* Jag använde notepad++ för att redigera .css dokumentet. 
+Många av elementen och dess variabler hittade jag hemsidan https://www.w3schools.com/ som hade fina sökfunktioner. 
+Jag testade mig fram för att komma så nära mål-utseendet som möjligt.  Det hela tog ganska lång tid... :-( */
+
+html {
+    background-color: lightslategrey; /*jag lät bakgrunden vara kvar*/
+	font-family: Arial, san-seriff; /*valde Arial som typsnitt - en vanligt förekommande san-seriff på nätet*/
+}
+	
+
+body { /* den ljusa delen definieras i bodyn */
+	padding-left: 10px; /*skapade marginaler från kanterna till rutorna*/
+	padding-right: 10px;
+	padding-bottom: 10px;
+    margin: auto; /*centrerade bodyn på sidan */
+    width: 450px; /*testade med lite olika bredder för att få till samma radbrytning som på bilden*/
+	background-color: LightCyan;   
+	
+	
+}
+
+
+h1 { /*formattering för rubriken*/
+	color: purple;
+	text-align: center;
+}
+
+
+#billy  { /*ruta och formattering för Billy*/
+  border-color: purple;
+  border-style: solid;
+  border-width: 1px;
+  padding: 7px; /*marginal inuti rutan */
+  color: darkred; /*valde en mörkare röd-färg för texten i hela Billy-rutan */
+  margin-bottom: 10px; /*för att få en marginal mellan rutorna så att de inte kollapsar*/
+ 
+}  
+
+
+
+#bob  { /*ruta och formattering för Bob*/
+  border-color: purple;
+  border-style: solid;
+  border-width: 1px;
+  padding: 7px; /*marginal inuti rutan */
+  color: darkgreen; /*valde en mörkare grönfärg för texten i hela Bobb-rutan */
+
+/*här behövs inte någon bottenmarginal, då det inte kommer ett element direkt efter */
+ 
+}
+
+
+p.two { /*Här fångar jag upp formatteringen för de olika paragraferna. 
+	Jag valde något lite större teckenstorlek för stycke nr 2 i Billy-rutan. 
+	I det första stycket styrs utseendet av vad som är angivet under #billy*/
+	
+	font-size: larger; 
+	font-weight: normal; /* för att få icke-fet text på detta stycke*/
+}
+	
+p.three {
+	font-size: small; /*jag valde mindre text med hjälp för stycke nr 3 i Billy-rutan*/
+	font-weight: normal; /* för att få icke-fet text på detta stycke*/
+}
+
